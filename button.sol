@@ -21,7 +21,7 @@ contract button {
     {
         // Contract Balance
         if ((openingTime >= block.timestamp) || (openingTime == 0)) {
-            openingTime = block.timestamp + 10;
+            openingTime = block.timestamp + 300;
             buttonCount += 1;
             addr = msg.sender;
             return (addr);
